@@ -8,6 +8,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.nav-wrapper {
+  background-color: #2a847b;
+}
+
 .brand-logo {
   margin: 0% 5%;
 }
