@@ -8,6 +8,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.brand-logo {
+  margin: 0% 5%;
+}
+
 .sell-titles {
   font-size: 36px;
   color: #4e2a84;
