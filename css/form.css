@@ -1,0 +1,41 @@
+/*
+Nu purple:  #4e2a84
+#2a847b - green
+#842a33 - red
+*/
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.brand-logo {
+  margin: 0% 5%;
+}
+
+.sell-titles {
+  font-size: 36px;
+  color: #4e2a84;
+  text-align: center;
+}
+
+/*
+.sell-titles-border {
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color:  #2a847b;
+  display: inline;
+}
+*/
+
+h5 {
+  color: #2a847b;
+}
+
+h2, label {
+  color: #4e2a84;
+}
+
+#button-center {
+  text-align: center;
+  margin: 10% 0%;
+}

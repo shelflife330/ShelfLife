@@ -1,113 +1,134 @@
 <!DOCTYPE html>
 <html>
-  <title>page 3 naveena</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/w3.css">
-<link rel="stylesheet" href="css/extras.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+  <meta charset="utf-8">
+  <title>Submit Textbook</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/form.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
 <body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
-    <a href="page2.html" class="w3-bar-item w3-button w3-hide-small">PAGE 2</a>
-    <a href="page3.html" class="w3-bar-item w3-button w3-hide-small">PAGE 3</a>
-    <a href="page4.html" class="w3-bar-item w3-button w3-hide-small">PAGE 4</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
-    </a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="page2.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PAGE 2</a>
-    <a href="page3.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PAGE 3</a>
-    <a href="page4.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PAGE 4</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-  </div>
-</div>
-
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">PAGE <span class="w3-hide-small">THREE</span> LOGO</span>
-  </div>
-</div>
-
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT THING 2</h3>
-  <p class="w3-center"><em>This is my third page</em></p>
-  <p>
-      Blah blah blah blah. Blah blah blah blah. Blah blah blah blah. Blah blah blah blah.
-      Blah blah blah blah. Blah blah blah blah. Blah blah blah blah. Blah blah blah blah.
-      Blah blah blah blah. Blah blah blah blah. Blah blah blah blah. Blah blah blah blah.
-      Blah blah blah blah. Blah blah blah blah. Blah blah blah blah. Blah blah blah blah.
-  </p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
-      <img src="images/p6.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">ShelfLife</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#">Browse</a></li>
+        <li><a href="#">Dashboard</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <div class="container">
+    <div id="top-titles">
+      <h2>Sell a Textbook.</h1>
+      <h5>It only takes 4 minutes.</h2>
     </div>
-  </div>
-</div>
+    <form action="/my-handling-form-page" method="post">
+      <!--change action location -->
+      <div id="basics">
+        <div class="sell-titles">
+          <p class="sell-titles-border">Basics</p>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="title" type="text" class="book-title">
+            <label for="title">Title</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="author" type="text" class="book-author">
+            <label for="author">Author</label>
+          </div>
+        </div>
 
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <textarea id="description" class="materialize-textarea"></textarea>
+                <label for="description">Description</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+      <div class="file-field input-field">
+        <div class="btn">
+          <span>(optional) File upload</span>
+          <input type="file">
+        </div>
+        <div class="file-path-wrapper">
+          <input class="file-path validate" type="text" placeholder="Upload a file">
+        </div>
+      </div>
 
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
+      <div id="details">
+        <div class="sell-titles">
+          <p class="sell-titles-border">Details</p>
+        </div>
+        <div class="row">
+          <div class="col s6">
+            <label for="price">Price</label>
+            <input type="number" id="price" name="price" value="20" min="0" max="200">
+          </div>
+          <div class="col s6">
+            <p>Is this negotiable?</p>
+            <label>
+                <input name="negotiable" type="radio" value="yes" checked />
+                <span>Yes</span>
+                </label>
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
+            <label>
+                  <input name="negotiable" type="radio" value="no"/>
+                  <span>No</span>
+                </label>
+          </div>
+        </div>
 
+        <p>Condition</p>
+        <label>
+          <input name="condition" type="radio" value="1" checked />
+          <span>Poor</span>
+          </label>
+        <label>
+            <input name="condition" type="radio" value="2"/>
+            <span>Used good</span>
+          </label>
+        <label>
+            <input name="condition" type="radio" value="3"/>
+            <span>Used-good</span>
+          </label>
+
+
+
+
+        <div id="contact-info">
+          <div class="sell-titles">
+            <p class="sell-titles-border">Contact Info</p>
+          </div>
+          <div class="row">
+            <div class="col s6">
+              <label for="mail">E-mail:</label>
+              <input type="email" id="mail" name="user_email" required/>
+            </div>
+            <div class="col s6">
+              <label for="telNo">(optional) Enter a telephone number (in the form xxx-xxx-xxxx): </label>
+              <input id="telNo" name="telNo" type="tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+              <span class="validity"></span>
+            </div>
+          </div>
+
+          <div id="button-center">
+            <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+          </div>
+
+    </form>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
+
 </html>
