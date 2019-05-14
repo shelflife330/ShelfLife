@@ -97,3 +97,16 @@ font-family: 'Montserrat', sans-serif;
 	background-color: #2a847b;
 	
 }
+.row {
+	width: 100%;
+	margin-top: 7.5%;
+}
+.book {
+	width: 80%;
+	height: 15vh;
+	border: 3px solid black;
+	margin-bottom: 2.5%;
+	margin: auto;
+	margin-bottom: 2.5%;
+
+}
