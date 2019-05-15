@@ -9,31 +9,28 @@
 
 <body>
   <div class="navbar-fixed">
-<nav class="nav-extended">
-    <div class="nav-wrapper">
-      <a href="index.html" class="brand-logo">ShelfLife</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="search.html">Browse</a></li>
-        <li class="active"><a>Dashboard</a></li>
-        <li><a href="index.html">Sign Out</a></li>
-      </ul>
-    </div>
-    <div class="nav-content">
-      <ul class="tabs tabs-transparent">
-        <li class="tab"><a href="selling.html" class="tablinks" id="defaultOpen">Currently listed</a></li>
-        <li class="tab"><a href="sold.html"class="tablinks">Previously sold</a></li>
-      </ul>
-    </div>
-  </nav>
-</div>
-
-<div class="container">
-  <div class="float">
-    <a href="form.html" class="btn-floating btn-large waves-effect waves-light red"><i id="add-textbook" class="material-icons">add</i></a>
+    <nav class="nav-extended">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo">ShelfLife</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="search.html">Browse</a></li>
+          <li class="active"><a>Dashboard</a></li>
+          <li><a href="index.html">Sign Out</a></li>
+        </ul>
+      </div>
+      <div class="nav-content">
+        <ul class="tabs tabs-transparent">
+          <li class="tab"><a href="selling.html" id="defaultOpen">Currently listed</a></li>
+          <li class="tab"><a href="sold.html">Previously sold</a></li>
+          <li class="tab"><a href="form.html" id="new-tab">New Textbook</a></li>
+        </ul>
+      </div>
+    </nav>
   </div>
 
-  <div id="Currently listed">
+  <div class="container">
+    <div id="Currently listed">
       <div id="top-book" class="book">
         <p class="book-info" id="book-title">Title</p>
         <p class="book-info" id="book-author">Author</p>
@@ -42,8 +39,8 @@
       <div class="book"> </div>
       <div class="book"> </div>
       <div class="book"> </div>
+    </div>
   </div>
-</div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>

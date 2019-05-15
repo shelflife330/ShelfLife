@@ -22,15 +22,15 @@ font-family: 'Montserrat', sans-serif;
 	margin-top: 2%;
 }
 
-.float {
-	position: fixed;
-	top: 20%;
-	left: 3%;
-}
-
 #add-textbook {
 	background-color: #7A5FA3;
 }
+
+#new-tab {
+	background-color: #A795C2;
+	width: 100%;
+}
+
 
 .nav-wrapper {
 	background-color: #2a847b;
