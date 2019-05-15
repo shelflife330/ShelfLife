@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<title>Dashboard</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/sold.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<body>
+  <div class="navbar-fixed">
+<nav class="nav-extended">
+    <div class="nav-wrapper">
+      <a href="index.html" class="brand-logo">ShelfLife</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="search.html">Browse</a></li>
+        <li class="active"><a>Dashboard</a></li>
+        <li><a href="index.html">Sign Out</a></li>
+      </ul>
+    </div>
+    <div class="nav-content">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><a href="selling.html" class="tablinks">Currently listed</a></li>
+        <li class="tab"><a class="tablinks" id="defaultOpen">Previously sold</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+  <div id="Currently listed" class="tabcontent">
+    <div class="row">
+      <div class="book"> </div>
+      <div class="book"> </div>
+      <div class="book"> </div>
+      <div class="book"> </div>
+      <div class="book"> </div>
+    </div>
+  </div>
+
+  <div class="float">
+    <a href="form.html" class="btn-floating btn-large waves-effect waves-light red"><i id="add-button" class="material-icons">add</i></a>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>

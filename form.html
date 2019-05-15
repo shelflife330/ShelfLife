@@ -6,7 +6,7 @@
   <title>Submit Textbook</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="css/form.css">
-
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
@@ -15,11 +15,16 @@
     <div class="nav-wrapper">
       <a href="#" class="brand-logo">ShelfLife</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#">Browse</a></li>
-        <li><a href="#">Dashboard</a></li>
+        <li><a href="search.html">Browse</a></li>
+        <li class="active"><a href="selling.html">Dashboard</a></li>
+        <li><a href="index.html">Sign Out</a></li>
       </ul>
     </div>
   </nav>
+
+  <div class="float">
+    <a href="selling.html" class="btn-floating btn-large waves-effect waves-light red"><i id="arrow-back" class="material-icons">arrow_back</i></a>
+  </div>
 
   <div class="container">
     <div id="top-titles">
@@ -122,7 +127,7 @@
           </div>
 
           <div id="button-center">
-            <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+            <button class="btn waves-effect waves-light" type="submit" name="action"><a href="selling.html">Submit</a></button>
           </div>
 
     </form>
