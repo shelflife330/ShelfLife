@@ -16,20 +16,22 @@ body {
   margin: 0% 5%;
 }
 
+.float {
+	position: fixed;
+	top: 15%;
+	left: 3%;
+}
+
+#arrow-back {
+  background-color: #FF5733;
+}
+
+
 .sell-titles {
   font-size: 36px;
   color: #4e2a84;
   text-align: center;
 }
-
-/*
-.sell-titles-border {
-  border-style: solid;
-  border-width: 0px 0px 1px 0px;
-  border-color:  #2a847b;
-  display: inline;
-}
-*/
 
 h5 {
   color: #2a847b;
@@ -43,3 +45,5 @@ h2, label {
   text-align: center;
   margin: 10% 0%;
 }
+
+a { color: inherit; }
