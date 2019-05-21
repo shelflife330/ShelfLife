@@ -19,6 +19,30 @@ font-family: 'Montserrat', sans-serif;
  margin-bottom: 5%;
 }
 
+
+#add-textbook {
+	position: fixed;
+	top: 20%;
+	left: 1%;
+	width: 13%;
+	border-radius: 30px;
+	color: white;
+}
+
+#add-textbook-icon {
+	background-color: #4e2a84;
+	padding: 3px;
+}
+
+#add-text {
+	display: block;
+	padding: 8% 0% 0% 0%;
+}
+
+#plus {
+	padding: 8% 0% 8% 8%;
+}
+
 #defaultOpen {
 	color: white;
 }
