@@ -63,11 +63,6 @@ font-family: 'Montserrat', sans-serif;
 	background-color: #2a847b;
 }
 
-.row {
-	width: 100%;
-	margin-top: 7.5%;
-}
-
 .book {
 	width: 100%;
 	height: 20vh;
@@ -76,6 +71,6 @@ font-family: 'Montserrat', sans-serif;
 	box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(0, 0, 0, 0.09);
 }
 
-.book-info {
-	display: inline-block;
+.textbook-image {
+	height: 350px;
 }
