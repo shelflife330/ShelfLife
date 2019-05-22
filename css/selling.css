@@ -14,47 +14,29 @@ font-family: 'Montserrat', sans-serif;
 	margin-bottom: 5%;
 }
 
-#add-textbook {
-	position: fixed;
-	top: 20%;
-	left: 1%;
-	width: 13%;
-	border-radius: 30px;
-	color: white;
-}
-
-#add-textbook-icon {
-	background-color: #4e2a84;
-	padding: 3px;
-}
-
-#add-text {
-	display: block;
-	padding: 8% 0% 0% 0%;
-}
-
-#plus {
-	padding: 8% 0% 8% 8%;
-}
-
-
 #defaultOpen {
 	color: white;
 }
 
-#top-book {
-	margin-top: 2%;
+#add-wrapper {
+	margin-top: 1%;
+	display: inline;
 }
 
-#add-textbook {
-	background-color: #7A5FA3;
-}
-
-#new-tab {
-	background-color: #A795C2;
+#add-rapper a {
 	width: 100%;
 }
 
+#add-textbook-text {
+	text-align: left;
+	width: 100%;
+}
+
+#add-button {
+	background-color: #4e2a84;
+	border-radius: 25px;
+	font-size: 10px;
+}
 
 .nav-wrapper {
 	background-color: #2a847b;
@@ -73,4 +55,8 @@ font-family: 'Montserrat', sans-serif;
 
 .textbook-image {
 	height: 350px;
+}
+
+.card {
+	height: 550px;
 }
