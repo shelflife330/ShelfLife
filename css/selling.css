@@ -18,30 +18,31 @@ font-family: 'Montserrat', sans-serif;
 	color: white;
 }
 
-#top-book {
-	margin-top: 2%;
+#add-wrapper {
+	margin-top: 1%;
+	display: inline;
 }
 
-#add-textbook {
-	background-color: #7A5FA3;
-}
-
-#new-tab {
-	background-color: #A795C2;
+#add-rapper a {
 	width: 100%;
 }
 
+#add-textbook-text {
+	text-align: left;
+	width: 100%;
+}
+
+#add-button {
+	background-color: #4e2a84;
+	border-radius: 25px;
+	font-size: 10px;
+}
 
 .nav-wrapper {
 	background-color: #2a847b;
 }
 .nav-content {
 	background-color: #2a847b;
-}
-
-.row {
-	width: 100%;
-	margin-top: 7.5%;
 }
 
 .book {
@@ -52,6 +53,10 @@ font-family: 'Montserrat', sans-serif;
 	box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(0, 0, 0, 0.09);
 }
 
-.book-info {
-	display: inline-block;
+.textbook-image {
+	height: 350px;
+}
+
+.card {
+	height: 550px;
 }
