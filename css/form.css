@@ -23,7 +23,7 @@ body {
 }
 
 #arrow-back {
-  background-color: #FF5733;
+  background-color: #4e2a84;
 }
 
 
@@ -47,3 +47,7 @@ h2, label {
 }
 
 a { color: inherit; }
+
+#upload-image {
+    margin: 0px;
+}
