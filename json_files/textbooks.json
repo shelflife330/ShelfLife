@@ -1,0 +1,72 @@
+var albums = [{
+  title: "Currents",
+  artist: "Tame Impala",
+  cover: "images/currents.jpg",
+  tracks: [
+    "Let It Happen",
+    "Nangs",
+    "The Moment",
+    "Yes I'm Changing",
+    "Eventually",
+    "Gossip",
+    "The Less I Know The Better",
+    "Past Life",
+    "Disciples",
+    "'Cause I'm A Man"
+  ]
+}, {
+  title: "Telefone",
+  artist: "Noname",
+  cover: "images/telefone.jpg",
+  tracks: [
+    "Yesterday",
+    "Sunny Duet",
+    "Diddy Bop",
+    "All I Need",
+    "Reality Check",
+    "Freedom Interlude",
+    "Casket Pretty",
+    "Forever",
+    "Bye Bye Baby",
+    "Shadow Man"
+  ]
+}, {
+  title: "Crybaby",
+  artist: "Melanie Martinez",
+  cover: "images/crybaby.jpg",
+  tracks: [
+    "Cry Baby",
+    "Dollhouse",
+    "Sippy Cup",
+    "Carousel",
+    "Alphabet Boy",
+    "Soap",
+    "Training Wheels",
+    "Pity Party",
+    "Tag, You're It",
+    "Milk and Cookies",
+    "Pacify Her",
+    "Mrs. Potato Head",
+    "Mad Hatter"
+  ]
+}, {
+  title: "Coloring Book",
+  artist: "Chance The Rapper",
+  cover: "images/cbook.jpg",
+  tracks: [
+    "All We Got",
+    "No Problem",
+    "Summer Friends",
+    "D.R.A.M. Sings Special",
+    "Blessings",
+    "Same Drugs",
+    "Mixtape",
+    "Angels",
+    "Juke Jam",
+    "All Night",
+    "How Great",
+    "Smoke Break",
+    "Finish Line / Drown",
+    "Blessings"
+  ]
+}];

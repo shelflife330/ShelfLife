@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/search.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
 </head>
@@ -26,36 +28,90 @@
   </nav>
 
   <div class="search__container">
-    <p class="search__title">
-        Search for Textbook
-    </p>
-    <input class="search__input" type="text" placeholder="Search">
-</div>
+    <input class="search__input form-control" id="myInput" type="text" placeholder="Search for Textbook">
+  </div>
+  <div class="container table_of_textbooks">
+    <table class="table responsive-table striped">
+      <thead>
+        <tr>
+          <th>Title (Click to See More)</th>
+          <th>Author</th>
+          <th>Class</th>
+          <th>Condition</th>
+          <th>Price</th>
+          <th>ISBN-13</th>
+        </tr>
+      </thead>
+      <tbody id="myTable">
+        <tr>
+          <td><a href="#">Linear Algebra and its Applications</a></td>
+          <td>David C. Lay</td>
+          <td>EA1, Math 240</td>
+          <td>Used-Good</td>
+          <td>$45</td>
+          <td>978-0321982384</a>
+        </tr>
+        <tr>
+          <td><a href="#">Short Guide to Writing About Art</a></td>
+          <td>Sylvan Barnet</td>
+          <td>AH 101</td>
+          <td>Used-Good</td>
+          <td>$45</td>
+          <td>978-0205886999</td>
+        </tr>
+        <tr>
+          <td><a href="#">Introductory Econometrics: A Modern Approach</a></td>
+          <td>Jeffery Wooldridge</td>
+          <td>Math 386</td>
+          <td>New</td>
+          <td>$15</td>
+          <td>978-1111531041</td>
+        </tr>
+        <tr>
+          <td><a href="#">Minds on trial: Great Cases in Law and Psychology</a></td>
+          <td>Charles Patrick Ewing</td>
+          <td>Psych 340</td>
+          <td>Poor</td>
+          <td>$8</td>
+          <td>978-0195181760</td>
+        </tr>
+        <tr>
+          <td><a href="#">Computer Systems: A Programmer's Perspective</a></td>
+          <td>Randal Bryant</td>
+          <td>EECS 213</td>
+          <td>Used-Good</td>
+          <td>$70</td>
+          <td>978-0134092669</td>
+        </tr>
+        <tr>
+          <td><a href="#">Sociology: A Down-To-Earth Approach</a></td>
+          <td>James M. Henslin</td>
+          <td>Soc 101</td>
+          <td>Poor</td>
+          <td>$40</td>
+          <td>978-0205096541</td>
+        </tr>
+        <tr>
+          <td><a href="#">Minds on trial</a></td>
+          <td>Charles Patrick Ewing</td>
+          <td>Psych 340</td>
+          <td>Poor</td>
+          <td>$8</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><a href="#">Minds on trial</a></td>
+          <td>Charles Patrick Ewing</td>
+          <td>Psych 340</td>
+          <td>Poor</td>
+          <td>$8</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-<!--
-    <div class="search-wrap">
-      <form>
-        <div id="search-bar" class="input-field">
-          <input id="search" type="search">
-          <label class="label-icon" for="search"><i class="material-icons"> search </i></label>
-          
-          
-          <i class="material-icons"> close </i>
-        </div>
-      </form>
-    </div>
-  -->
-<!--
-    <div id="search-wrap">
-      <form>
-        <div class="input-field">
-          <input id="search">
-          <i class="material-icons">search</i>
-        
-        </div>
-      </form>
-    </div>
--->  
+  <script type="text/javascript" src="scripts/search.js"></script>
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
