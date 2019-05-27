@@ -13,37 +13,17 @@ body {
   background-color: #2a847b;
 }
 
-/*
-.search-wrap {
-	width: 35%;
-	top: 50%;
-	left: 50%;
-	text-align: center;
-	background-color: #2a847b;
-	border-radius: 20px;
-	margin: auto;
-}
-#input-field {
- 	width: 100%;
- 	height: 100%;
- 	box-shadow: none;
-	border-bottom: none;
-}
-#search{
-	width: 80%;
-}
-#search textarea:focus {
-  border-bottom: none!important;
-  box-shadow: none!important;
-}
-*/
-
 /* Base styling */
-
 .search__container {
   padding-top: 3%;
+  padding-bottom: 3%;
   width: 40%;
   margin: auto;
+}
+
+.search__container label {
+  font-size: 1em;
+  text-align: center;
 }
 
 .container {
