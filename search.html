@@ -8,13 +8,10 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/search.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-
-
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
 </head>
 
 <body>
-
   <nav class="nav-extended">
     <div class="nav-wrapper">
       <a href="index.html" class="brand-logo">ShelfLife</a>
@@ -25,21 +22,61 @@
         <li><a href="index.html">Sign Out</a></li>
       </ul>
     </div>
+
+    <div id="search_nav" class="nav-wrapper">
+      <form>
+        <div class="input-field">
+          <input id="search" type="search" required>
+          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+          <i class="material-icons">close</i>
+        </div>
+      </form>
+    </div>
   </nav>
 
-  <div class="search__container">
-    <label>Search for Class by Title, Author, Class, Condition, or ISBN-13</label>
-    <input class="search__input form-control" id="myInput" type="text" placeholder="Search">
+  <div class="row search_and_filter">
+    <div class="col s6">
+      <div class="search__container">
+        <label>Search for Class by Title, Author, Class, or ISBN-13</label>
+        <input class="search__input form-control" id="myInput" type="text" placeholder="Search" oninput="changeDisplay()">
+      </div>
+    </div>
+
+
+    <div id="filter" class="col s6">
+      <form action="search.html" type="get">
+        <p class="inline" id="range-field">
+          <label>Max Price</label>
+          <input type="range" id="price_filter" min="0" max="200" />
+        </p>
+        <div class="inline" id="checkboxes">
+          <label>
+          <input type="checkbox" checked="checked"/>
+          <span>Poor</span>
+        </label>
+          <label>
+          <input type="checkbox" checked="checked"/>
+          <span>Used-Good</span>
+        </label>
+          <label>
+          <input type="checkbox" checked="checked"/>
+          <span>New</span>
+        </label>
+        </div>
+      <div class="inline" id="apply_filter">
+        <button class="waves-effect waves-light btn" type="submit">Apply</button>
+      </div>
+      </form>
+    </div>
   </div>
 
   <div class="container table_of_textbooks">
-    <table class="table responsive-table striped">
+    <table class="table striped">
       <thead>
         <tr>
           <th>Title (Click to See More)</th>
           <th>Author</th>
           <th>Class</th>
-          <th>Condition</th>
           <th>Price</th>
           <th>ISBN-13</th>
         </tr>

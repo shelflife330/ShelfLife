@@ -9,15 +9,25 @@ body {
   margin: 0% 5%;
 }
 
-.nav-wrapper {
+nav {
+  background-color: #2a847b
+}
+
+.nav_extended, .nav-wrapper {
   background-color: #2a847b;
+}
+
+#test {
+  background-color: #4e2a84;
+  width: 40%;
+  margin-left: 30%;
 }
 
 /* Base styling */
 .search__container {
   padding-top: 3%;
   padding-bottom: 3%;
-  width: 40%;
+  width: 75%;
   margin: auto;
 }
 
@@ -77,4 +87,43 @@ body {
   border-radius: 0 !important;
   background-position: 100% center;
   background-color: transparent !important;
+}
+
+#filter {
+  /*border: 1px solid #2a847b;*/
+  margin-top: 2%;
+}
+
+#filter label {
+  display: block;
+}
+
+.inline {
+  display: inline-block;
+}
+
+#range-field {
+  width: 30%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#myTable tr {
+  display: none;
+}
+
+.search_and_filter {
+    margin-top: 2%;
+}
+
+#apply_filter {
+  text-align: center;
+}
+
+#apply_filter button {
+  margin: 0% 0% 70% 10%;
+}
+
+.book-title-link {
+  color: #4e2a84;
 }
