@@ -111,10 +111,16 @@ buildTable();
 
 $(document).ready(function() {
   $('#myTable tr').css("display", "none");
-  $("#myInput").on("keyup", function() {
+  $("#search").on("keyup", function() {
     var value = $(this).val().toLowerCase();
     $("#myTable tr").filter(function() {
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
   });
+  /*$("#search").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });*/
 });

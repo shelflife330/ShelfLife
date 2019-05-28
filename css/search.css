@@ -10,30 +10,17 @@ body {
 }
 
 nav {
-  background-color: #2a847b
+  background-color: #2a847b;
 }
 
 .nav_extended, .nav-wrapper {
   background-color: #2a847b;
 }
 
-#test {
-  background-color: #4e2a84;
-  width: 40%;
-  margin-left: 30%;
-}
-
-/* Base styling */
-.search__container {
-  padding-top: 3%;
-  padding-bottom: 3%;
-  width: 75%;
-  margin: auto;
-}
-
-.search__container label {
-  font-size: 1em;
-  text-align: center;
+#search_nav {
+  background-color: #644593;
+  width: 50%;
+  margin-left: 25%;
 }
 
 .container {
@@ -43,50 +30,6 @@ nav {
 .table_of_textbooks {
   overflow: scroll;
   text-align: center;
-}
-
-.search__input {
-  width: 100%;
-  padding: 12px 24px !important;
-  transition: transform 250ms ease-in-out !important;
-  font-size: 14px;
-  line-height: 18px;
-  color: #575756;
-  background-color: #2a847b !important;
-  background-repeat: no-repeat;
-  background-size: 18px 18px;
-  background-position: 95% center;
-  /*border-radius: 50px !important; */
-  border: 1px solid #575756 !important;
-  transition: all 250ms ease-in-out !important;
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-}
-
-.search__input::placeholder {
-  color: lightgrey;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-}
-
-.search__input:hover {
-  padding: 12px 0 !important;
-  outline: 0;
-  border: 1px solid transparent !important;
-  border-bottom: 1px solid #575756 !important;
-  border-radius: 0 !important;
-  background-position: 100% center;
-  background-color: transparent !important;
-}
-
-.search__input:focus {
-  padding: 12px 0 !important;
-  outline: 0;
-  border: 1px solid transparent !important;
-  border-bottom: 1px solid #575756 !important;
-  border-radius: 0 !important;
-  background-position: 100% center;
-  background-color: transparent !important;
 }
 
 #filter {
@@ -112,16 +55,12 @@ nav {
   display: none;
 }
 
-.search_and_filter {
-    margin-top: 2%;
-}
-
 #apply_filter {
   text-align: center;
 }
 
 #apply_filter button {
-  margin: 0% 0% 70% 10%;
+  margin: 0% 0% 70% 60%;
 }
 
 .book-title-link {

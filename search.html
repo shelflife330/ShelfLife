@@ -26,7 +26,7 @@
     <div id="search_nav" class="nav-wrapper">
       <form>
         <div class="input-field">
-          <input id="search" type="search" required>
+          <input id="search" type="search" placeholder="Search for Class by Title, Author, Class, or ISBN-13" required>
           <label class="label-icon" for="search"><i class="material-icons">search</i></label>
           <i class="material-icons">close</i>
         </div>
@@ -35,15 +35,7 @@
   </nav>
 
   <div class="row search_and_filter">
-    <div class="col s6">
-      <div class="search__container">
-        <label>Search for Class by Title, Author, Class, or ISBN-13</label>
-        <input class="search__input form-control" id="myInput" type="text" placeholder="Search" oninput="changeDisplay()">
-      </div>
-    </div>
-
-
-    <div id="filter" class="col s6">
+    <div id="filter" class="col s8 offset-s3">
       <form action="search.html" type="get">
         <p class="inline" id="range-field">
           <label>Max Price</label>
