@@ -3,16 +3,15 @@
 
 <head>
   <meta charset="utf-8">
-  <title>ShelfLife Login</title>
+  <title>ShelfLife</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/search.css">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
 </head>
 
 <body>
-
   <nav class="nav-extended">
     <div class="nav-wrapper">
       <a href="index.html" class="brand-logo">ShelfLife</a>
@@ -23,39 +22,64 @@
         <li><a href="index.html">Sign Out</a></li>
       </ul>
     </div>
-  </nav>
 
-  <div class="search__container">
-    <p class="search__title">
-        Search for Textbook
-    </p>
-    <input class="search__input" type="text" placeholder="Search">
-</div>
-
-<!--
-    <div class="search-wrap">
-      <form>
-        <div id="search-bar" class="input-field">
-          <input id="search" type="search">
-          <label class="label-icon" for="search"><i class="material-icons"> search </i></label>
-          
-          
-          <i class="material-icons"> close </i>
-        </div>
-      </form>
-    </div>
-  -->
-<!--
-    <div id="search-wrap">
+    <div id="search_nav" class="nav-wrapper">
       <form>
         <div class="input-field">
-          <input id="search">
-          <i class="material-icons">search</i>
-        
+          <input id="search" type="search" placeholder="Search for Class by Title, Author, Class, or ISBN-13" required>
+          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+          <i class="material-icons">close</i>
         </div>
       </form>
     </div>
--->  
+  </nav>
+
+  <div class="row search_and_filter">
+    <div id="filter" class="col s8 offset-s3">
+      <form action="search.html" type="get">
+        <p class="inline" id="range-field">
+          <label>Max Price</label>
+          <input type="range" id="price_filter" min="0" max="200" />
+        </p>
+        <div class="inline" id="checkboxes">
+          <label>
+          <input type="checkbox" checked="checked"/>
+          <span>Poor</span>
+        </label>
+          <label>
+          <input type="checkbox" checked="checked"/>
+          <span>Used-Good</span>
+        </label>
+          <label>
+          <input type="checkbox" checked="checked"/>
+          <span>New</span>
+        </label>
+        </div>
+      <div class="inline" id="apply_filter">
+        <button class="waves-effect waves-light btn" type="submit">Apply</button>
+      </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="container table_of_textbooks">
+    <table class="table striped">
+      <thead>
+        <tr>
+          <th>Title (Click to See More)</th>
+          <th>Author</th>
+          <th>Class</th>
+          <th>Price</th>
+          <th>ISBN-13</th>
+        </tr>
+      </thead>
+      <tbody id="myTable">
+      </tbody>
+    </table>
+  </div>
+
+
+  <script type="text/javascript" src="scripts/search.js"></script>
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
