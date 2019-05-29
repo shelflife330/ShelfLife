@@ -60,3 +60,23 @@ font-family: 'Montserrat', sans-serif;
 .card {
 	height: 550px;
 }
+.wrap1 {
+	justify-content: space-between;
+}
+.wrap2 {
+	float: left;
+}
+#form {
+	padding-left: 2.5%;
+	width: 50%;
+}
+#book {
+	padding-right: 2.5%;
+}
+#delete {
+	background-color: #e84855;
+}
+#buttons{
+	display: inline-block;
+	width: 50%;
+}
