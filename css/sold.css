@@ -2,23 +2,21 @@ body {
 font-family: 'Montserrat', sans-serif;
 }
 
+.container {
+	width: 70%;
+}
+
 .brand-logo {
- margin-left: 1%;
-}
-
-.test {
- height: 5000px;
-}
-
-.container{
- position: relative;
- top: 50%;
+	margin-left: 1%;
 }
 
 .navbar-fixed {
- margin-bottom: 5%;
+	margin-bottom: 5%;
 }
 
+#defaultOpen {
+	color: white;
+}
 
 #add-wrapper {
 	margin-top: 1%;
@@ -38,46 +36,41 @@ font-family: 'Montserrat', sans-serif;
 	background-color: #4e2a84;
 	border-radius: 25px;
 	font-size: 10px;
-}
-
-#defaultOpen {
-	color: white;
-}
-
-.float {
- position: fixed;
- top: 85%;
- left: 5%;
-}
-
-
-#new-tab {
-	background-color: #A795C2;
-	width: 100%;
+  margin-left: 1%;
 }
 
 .nav-wrapper {
- background-color: #2a847b;
+	background-color: #2a847b;
 }
 .nav-content {
- background-color: #2a847b;
+	background-color: #2a847b;
 }
-
-
-.book {
- height: 20vh;
- border: .5px solid grey;
- margin-bottom: 2.5%;
- margin: auto;
- margin-bottom: 2.5%;
- box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(0, 0, 0, 0.09);
-}
-
 
 .textbook-image {
-	height: 350px;
+	height: 325px;
 }
 
 .card {
-	height: 550px;
+	height: 450px;
+}
+
+.wrap1 {
+	justify-content: space-between;
+}
+.wrap2 {
+	float: left;
+}
+#form {
+	padding-left: 2.5%;
+	width: 50%;
+}
+#book {
+	padding-right: 2.5%;
+}
+#delete {
+	background-color: #e84855;
+}
+#buttons{
+	display: inline-block;
+	width: 50%;
 }

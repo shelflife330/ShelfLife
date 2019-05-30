@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
-<title>Dashboard</title>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="css/sold.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<head>
+  <title>Dashboard: Sold</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/sold.css">
+</head>
 
 <body>
   <div class="navbar-fixed">
     <nav class="nav-extended">
       <div class="nav-wrapper">
-        <a href="index.html" class="brand-logo">ShelfLife</a>
+        <a href="selling.html" class="brand-logo">ShelfLife</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="search.html">Browse</a></li>
@@ -19,72 +22,70 @@
           <li><a href="index.html">Sign Out</a></li>
         </ul>
       </div>
+
       <div class="nav-content">
         <ul class="tabs tabs-transparent">
-          <li class="tab"><a href="selling.html" class="tablinks">Currently listed</a></li>
-          <li class="active tab"><a class="tablinks" id="defaultOpen">Previously sold</a></li>
+          <li class="tab"><a href="selling.html" id="defaultOpen">Currently listed</a></li>
+          <li class="active tab"><a href="sold.html">Previously sold</a></li>
         </ul>
       </div>
     </nav>
   </div>
 
-  <div id="Sold">
-    <div class="row">
-      <div id="add-wrapper" class="col l3 m12 xl2">
-          <a href="form.html" id="add-button" class="waves-effect waves-light btn-large">
-            <i class="material-icons left">add</i>
-            <span id="add-textbook-text">Add Textbook</span>
-          </a>
-      </div>
 
-      <div class="col l3 m4 s12">
-        <div class="card">
-          <div class="card-image">
-            <img src="images/lay_LA.jpg" class="textbook-image">
-          </div>
-          <div class="card-content">
-            <p>Linear Algebra and its Applications</p>
-            <p>By David C. Lay</p>
-            <p>Price: $45 (negotiable)</p>
-          </div>
-          <div class="card-action">
-            <a class="card-action-text" href="#">Edit Book Details</a>
-          </div>
-        </div>
-      </div>
-      <div class="col l3 m4 s12">
-        <div class="card">
-          <div class="card-image">
-            <img src="images/writing_about_art.jpg" class="textbook-image">
-          </div>
-          <div class="card-content">
-            <p>Short Guide to Writing About Art</p>
-            <p>By Sylvan Barnet</p>
-            <p>Price: $15 (non-negotiable)</p>
-          </div>
-          <div class="card-action">
-            <a href="#">Edit Book Details</a>
+
+  <div id="Currently listed">
+
+    <div id="add-wrapper" class="col l3 m12 xl2">
+      <a href="form.html" id="add-button" class="waves-effect waves-light btn-large">
+              <i class="material-icons left">add</i>
+              <span id="add-textbook-text">Add Textbook</span>
+            </a>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/mas1.jpg" class="textbook-image">
+            </div>
+            <div class="card-content">
+              <p>Mas: Espanol Intermedio</p>
+              <p>By Ana Maria Perez-Girones</p>
+              <p>Price: $60 (negotiable)</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col l3 m4 s12">
-        <div class="card">
-          <div class="card-image">
-            <img src="images/econometrics.jpg" class="textbook-image">
+        <div class="col l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/hcd.jpg" class="textbook-image">
+            </div>
+            <div class="card-content">
+              <p>How Children Develop</p>
+              <p>By Robert Siegler</p>
+              <p>Price: $15 (non-negotiable)</p>
+            </div>
           </div>
-          <div class="card-content">
-            <p>Introductory Econometrics: A Modern Approach</p>
-            <p>By Jeffery Wooldridge</p>
-            <p>Price: $15 (negotiable)</p>
-          </div>
-          <div class="card-action">
-            <a href="#">Edit Book Details</a>
+        </div>
+        <div class="col l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/rm.jpg" class="textbook-image">
+            </div>
+            <div class="card-content">
+              <p>Research Methods</p>
+              <p>By Ben Gorvine</p>
+              <p>Price: $15 (negotiable)</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>
