@@ -83,15 +83,18 @@ function buildTable() {
 
       var contents = `
         <tr>
-        <td><a class="book-title-link" href="#">${textbooks[i].title}</a></td>
+        <td><a class='book-title-link' href='#'>${textbooks[i].title}</a></td>
         <td>${textbooks[i].author}</td>
         <td>${classes}</td>
         <td>${textbooks[i].price}</td>
         <td>${textbooks[i].isbn13}</td>
       </tr>
       `;
-      textbook.innerHTML = contents;
       textbookList.appendChild(textbook);
+      textbook.innerHTML = contents;
+      if (textbooks[i].title == "Introductory Econometrics: A Modern Approach") {
+        document.getElementsByClassName('book-title-link')[2].href="BuyerBookPreview.html";
+      }
     }
   }
 }
