@@ -98,3 +98,7 @@ font-family: 'Montserrat', sans-serif;
 .delete {
 	float: right;
 }
+
+.sold {
+	color: #4e2a84;
+}

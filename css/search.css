@@ -41,6 +41,12 @@ nav {
   display: block;
 }
 
+#price_wrap {
+  width: 40%;
+  float: left;
+  margin-right: 5%;
+}
+
 .inline {
   display: inline-block;
 }

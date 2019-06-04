@@ -81,6 +81,9 @@ function buildTable() {
         }
       }
 
+      let id_name = "book-" + String(i);
+      document.getElementsByTagName("tr")[i].setAttribute("id", id_name);
+
       var contents = `
         <tr>
         <td><a class='book-title-link' href='#'>${textbooks[i].title}</a></td>
@@ -90,6 +93,7 @@ function buildTable() {
         <td>${textbooks[i].isbn13}</td>
       </tr>
       `;
+
       textbookList.appendChild(textbook);
       textbook.innerHTML = contents;
       if (textbooks[i].title == "Introductory Econometrics: A Modern Approach") {
@@ -113,17 +117,31 @@ buildTable();
 
 
 $(document).ready(function() {
-  $('#myTable tr').css("display", "none");
+  //$('#myTable tr').css("display", "none");
   $("#search").on("keyup", function() {
     var value = $(this).val().toLowerCase();
     $("#myTable tr").filter(function() {
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+
     });
   });
-  /*$("#search").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $("#myTable tr").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });*/
 });
+
+/*
+function filter() {
+  var textbookList = document.getElementById("myTable");
+  if (textbookList != null) {
+    for (var i = 0; i < textbooks.length; i++) {
+      let price = document.getElementById('price').value;
+      var id_name = "book-" + String(i);
+      if (textbooks[i].price > price) {
+        //console.log("1: Max is: " + String(price) + " but the price is " + String(textbooks[i].price ));
+        document.getElementById(id_name).style.display = "none";
+      }
+      else {
+        //console.log("2: Max is: " + String(price) + " but the price is " + String(textbooks[i].price ));
+        document.getElementById(id_name).style.display = "table-row";
+      }
+    }
+  }
+}*/
