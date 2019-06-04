@@ -6,7 +6,7 @@ body {
 }
 
 .brand-logo {
-  margin: 0% 5%;
+  margin-left: 1%;
 }
 
 nav {
@@ -39,6 +39,12 @@ nav {
 
 #filter label {
   display: block;
+}
+
+#price_wrap {
+  width: 40%;
+  float: left;
+  margin-right: 5%;
 }
 
 .inline {
