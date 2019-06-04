@@ -61,6 +61,7 @@ font-family: 'Montserrat', sans-serif;
 .wrap2 {
 	float: left;
 }
+
 #form {
 	padding-left: 2.5%;
 	width: 50%;
@@ -91,14 +92,14 @@ font-family: 'Montserrat', sans-serif;
 	color: #2a847b;
 }
 
-.edit {
-	float: left;
-}
-
-.delete {
-	float: right;
-}
-
 .sold {
 	color: #4e2a84;
+}
+
+.edit, .sold, .delete {
+	display: inline;
+}
+
+.edit, .sold {
+	margin-bottom: 5px;
 }
