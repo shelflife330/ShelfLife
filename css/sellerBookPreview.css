@@ -76,11 +76,10 @@ font-family: 'Montserrat', sans-serif;
 #delete {
 	background-color: #e84855;
 }
+
 #buttons{
-	display: inline-block;
 	width: 50%;
-	margin: auto;
-	text-align: center;
+	margin-bottom: 20%;
 }
 .container {
 	margin: auto;

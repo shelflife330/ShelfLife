@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>ShelfLife Login</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/register.css">
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
 </head>
@@ -13,7 +13,7 @@
 <body>
   <nav>
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo">ShelfLife</a>
+      <a href="index.html" class="brand-logo">ShelfLife</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
       </ul>
     </div>
@@ -21,8 +21,8 @@
 
   <div class="container">
     <div id="landing-titles">
-      <h1>ShelfLife</h1>
-      <p>Textbooks are expensive. We make them cheaper.</p>
+      <h1>Make an Account</h1>
+      <p>It's really easy.</p>
     </div>
     <form action="search.html" method="get">
       <div class="row">
@@ -38,18 +38,20 @@
         </div>
       </div>
       <div class="row">
-        <div class="button-center col s4 offset-s4">
-          <button class="waves-effect waves-light btn" type="submit">Log in</button>
+        <div class="input-field col s4 offset-s4">
+          <input id="confirm-password" type="password" class="validate" required>
+          <label for="confirm-password">Confirm Password</label>
         </div>
       </div>
       <div class="row">
         <div class="button-center col s4 offset-s4">
-          <a href="register.html"><button class="waves-effect waves-light btn" type="button">Register</button></a>
+          <button class="waves-effect waves-light btn" type="submit">Submit</button>
         </div>
       </div>
     </form>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="scripts/register.js"></script>
 </body>
 
 </html>
